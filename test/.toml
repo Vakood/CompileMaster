@@ -1,0 +1,14 @@
+[archive]
+name = "test"
+
+[[files]]
+path = "app.py"
+
+[[files]]
+path = "arg.py"
+
+[[files]]
+path = ""
+
+[[folders]]
+path = ""

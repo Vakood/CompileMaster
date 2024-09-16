@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=60.0", "wheel", "toml", "cryptography"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "compilemaster"
+version = "0.1"
+description = "A tool for packing files based on TOML configuration"
+authors = [
+    { name = "Vakood", email = "vakood@coffeedev.dev" }
+]
+license = { text = "MIT" }
+dependencies = [
+    "toml"
+]
+
+[project.entry-points.console_scripts]
+compl = "compilemaster.cli:main"
+
+[tool.setuptools]
+packages = ["compilemaster"]
